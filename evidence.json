@@ -1,0 +1,962 @@
+{
+  "scope": "Eight downloaded ECE330 Exam 1 blank exams; 32 major problems",
+  "counting_unit": "One exam per category; separate distinct (exam, Problem) group count; categories overlap",
+  "sources": [
+    {
+      "id": "fa19",
+      "term": "Fall 2019",
+      "file": "fa19_mt1_blank.pdf",
+      "pages": 10,
+      "sha256": "c1c0f8ce4dde128d00e5f51d2046b6572daac5935295c209859a49a781445081"
+    },
+    {
+      "id": "sp21",
+      "term": "Spring 2021",
+      "file": "sp21_mt1_blank.pdf",
+      "pages": 5,
+      "sha256": "ec067895331b48855ef9e184bf555013830de20a0b7a996f7b699b8313f3fe8d"
+    },
+    {
+      "id": "fa21",
+      "term": "Fall 2021",
+      "file": "fa21_mt1_blank.pdf",
+      "pages": 10,
+      "sha256": "238f94f4c00e1a67a67bdd707c48b1989241088b7c789276e347486038e08dad"
+    },
+    {
+      "id": "sp22",
+      "term": "Spring 2022",
+      "file": "sp22_mt1_blank.pdf",
+      "pages": 12,
+      "sha256": "366de5dd830121773e9bd13f3bfd7db7a5d339066e82ab4d773cd20415d30335"
+    },
+    {
+      "id": "sp23",
+      "term": "Spring 2023",
+      "file": "sp23_mt1_blank.pdf",
+      "pages": 10,
+      "sha256": "2c28957372dcfce4c4bbc00c03ef93525536d3236b9656ccb744dc48126832c8"
+    },
+    {
+      "id": "fa23",
+      "term": "Fall 2023",
+      "file": "ECE330_fa23-mt1-exam.pdf",
+      "pages": 10,
+      "sha256": "9f1f0d888364d607a47b526cfc1022f072a93a1f367ada68f066568d552774f4"
+    },
+    {
+      "id": "sp24",
+      "term": "Spring 2024",
+      "file": "ECE330_sp24-mt1-exam.pdf",
+      "pages": 9,
+      "sha256": "54cae5902180a78934155ff346a5efc726421bc9cb0181f568eb395e22c62cad"
+    },
+    {
+      "id": "fa24",
+      "term": "Fall 2024",
+      "file": "ECE330-mt1-fall24_v2.pdf",
+      "pages": 9,
+      "sha256": "1d35c5662303296829877203f73368abdbcb8c7c724c8aff66af0bb45307df13"
+    }
+  ],
+  "categories": [
+    {
+      "id": "A",
+      "title": "单相负载的相量 复功率与功率因数",
+      "definition": "统计每卷 Problem 1 的单相负载综合题。含单负载和多负载；变压器题中顺带计算负载功率不另计为这一主干题型。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "1(a,c,d,e)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "三种并联负载，求各支路电流、源电压、源端与负载端 PF。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp21",
+          "problem": "1(a,b)",
+          "pages": [
+            2
+          ],
+          "proof": "由电压电流波形求平均功率；再求两个并联负载的总电流与 PF。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "1(a–d)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "10 kW、0.8 lagging 负载与馈线，求源电流、电压、复功率、PF。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "1(a–c)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "100 W、0.6 lagging 与 1 A、0.6 leading 两负载，求支路电流和综合 PF。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "1(a,b)",
+          "pages": [
+            2
+          ],
+          "proof": "2 kV、100 A、150 kW 的两负载系统，求电流角度与第二负载复功率。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "1(a,b)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "157 cos(377t+15°) V，800 W+j400 VAR 与 14∠20° Ω，求时域电流和总复功率。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "1(a,b)",
+          "pages": [
+            2
+          ],
+          "proof": "100∠30° V，180 W、0.6 lagging 与 1 A、0.6 leading，求两支路电流。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "1(a–c)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "100 A、8 kW 和 (5+j2) Ω 三负载，求源功率、时域量和负载端 PF。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "sp24",
+        "1(a,b)",
+        [
+          2
+        ]
+      ],
+      "summary": "电源为 100∠30° V；负载 1 消耗 180 W，PF=0.6 滞后；负载 2 电流幅值为 1 A，PF=0.6 超前。求两负载电流相量，允许直角或极坐标形式，须写单位。",
+      "method": "先把 lagging（滞后）对应为 $Q>0$，leading（超前）对应为 $Q<0$；所有相量使用 RMS（有效值）。\n\n$$\\bar S=P+jQ=\\bar V\\bar I^*,\\qquad \\bar I=\\left(\\frac{\\bar S}{\\bar V}\\right)^*,\\qquad \\bar S_{\\mathrm{tot}}=\\sum_k\\bar S_k.$$\n\n共轭作用在整个 $\\bar S/\\bar V$ 上，角度变号。对阻抗负载直接用 $\\bar I=\\bar V/\\bar Z$。不要把电流幅值直接相加，也不要平均各支路 PF。",
+      "diagram": "single",
+      "qa": [
+        [
+          "为何滞后负载的 Q 为正？",
+          "以吸收功率为正的被动约定下，电流落后电压使 VI* 的角度为正，因此虚部 Q 为正。"
+        ],
+        [
+          "画出两个并联负载的电流方向和电压极性。",
+          "两支路共用同一电压；每个电流流入该负载标为正的电压端。"
+        ],
+        [
+          "总 PF 能否取各负载 PF 的算术平均？",
+          "不能。先加 P、Q 得总复功率，再算 P/√(P²+Q²)，由总 Q 判超前或滞后。"
+        ]
+      ],
+      "exam_count": 8,
+      "question_group_count": 8
+    },
+    {
+      "id": "B",
+      "title": "平衡三相负载的线量 相量与总功率",
+      "definition": "每卷 Problem 2 的平衡三相题；Y 与 Δ 连接、每相等效、功率反推和同阻抗换接都归入这一类。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "2(a,b,e)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "4160 V、1200 kVA，画三相与每相等效图并反求 Δ 阻抗。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp21",
+          "problem": "2(a,b)",
+          "pages": [
+            2
+          ],
+          "proof": "4160 V，两个 Y 负载与一个 Δ 负载，求各负载复功率和总线电流。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "2(a)",
+          "pages": [
+            4
+          ],
+          "proof": "208 V，Y 负载给线电流，Δ 负载给相电流，求总线电流。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "2(a,b)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "480 V、300 kVA、Δ 阻抗 50+j50 Ω，画每相等效图并求各线电流。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "2(a–c)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "578 V，电容加入后线电流 30 A→45 A，求 Y/Δ 每相量并反推原负载复功率。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "2(a,b)",
+          "pages": [
+            5,
+            6
+          ],
+          "proof": "11 kV，300 kW Y 负载与 3 A/相的纯容性 Δ 负载，求 P、Q 和线电流。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "2(a–d)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "208 V，混合 Y/Δ 负载，求 P、线电流、Δ 阻抗；保持每相阻抗把 Δ 改 Y。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "2(a)",
+          "pages": [
+            4
+          ],
+          "proof": "208 V、1500 W，新增 Y 纯无功负载后线电流 5 A→7 A，反求每相阻抗。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "sp22",
+        "2(a,b)",
+        [
+          4,
+          5
+        ]
+      ],
+      "summary": "Y 源线电压 480 V。负载 1 为 Y 接，三相 300 kVA、PF=0.6 滞后；负载 2 为 Δ 接，每相阻抗 50+j50 Ω。画每相等效图，标源电压、负载 1 每相功率、负载 2 等效阻抗，再以极坐标给出两个负载线电流和总线电流。",
+      "method": "平衡系统按同一相建立等效电路，先统一每相量，再求相量电流。\n\n$$V_{\\phi,Y}=\\frac{V_L}{\\sqrt3},\\quad I_{\\phi,Y}=I_L,\\quad V_{\\phi,\\Delta}=V_L,\\quad |I_{L,\\Delta}|=\\sqrt3|I_{\\phi,\\Delta}|,\\quad Z_Y=\\frac{Z_\\Delta}{3}.$$\n\n$$\\bar S_{3\\phi}=3\\bar V_\\phi\\bar I_\\phi^*,\\qquad |\\bar S_{3\\phi}|=\\sqrt3V_L|I_L|.$$\n\n最后一式只给幅值，不给相角。求电流相角必须说明参考相电压和相序。sp24 2(d) 保持同一物理阻抗改接 Y，是改变负载；并非为了等效而把阻抗除以 3。",
+      "diagram": "three",
+      "qa": [
+        [
+          "Δ 转 Y 为何除以 3？",
+          "这是平衡端口等效转换，使端口线电压和线电流不变；不是物理换接时自动改变元件阻抗。"
+        ],
+        [
+          "300 kVA 三相总量进入每相图是多少？",
+          "100 kVA/相，PF 保持 0.6 滞后。"
+        ],
+        [
+          "能否给 Δ 负载直接使用 VL/√3？",
+          "原 Δ 每相承受 VL；只有将其转换为等效 Y 后，每相才使用 VL/√3。"
+        ]
+      ],
+      "exam_count": 8,
+      "question_group_count": 8
+    },
+    {
+      "id": "C",
+      "title": "单线圈磁路的磁阻 磁通 磁链与电感",
+      "definition": "每卷 Problem 3。求磁阻、磁通、磁链、电感或由磁链求电压均归于单线圈磁路主干；未把多线圈参数题算入。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "3(a–c)",
+          "pages": [
+            6,
+            7
+          ],
+          "proof": "300 匝、μr=2000、2 mm 气隙，画磁路、求总磁通和 L。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp21",
+          "problem": "3",
+          "pages": [
+            3
+          ],
+          "proof": "250 匝、μr=2500、两处图示气隙 g=10 mm，求 L。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "3(a–c)",
+          "pages": [
+            5,
+            6
+          ],
+          "proof": "无限磁导率主体、两个有限磁导率插块、三处图示气隙，求磁路、磁通及 v(i)。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "3(a,b)",
+          "pages": [
+            7,
+            8
+          ],
+          "proof": "μr=1000、中心气隙、考虑 fringing，画磁路并求 L。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "3(a–c)",
+          "pages": [
+            6,
+            7
+          ],
+          "proof": "450 匝、两个 μr=2450 插块与中心气隙，求磁路、磁链及 v(t)。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "3(a)",
+          "pages": [
+            7
+          ],
+          "proof": "μ=∞、12 匝、三条支路给磁阻，画极性正确的磁路并求 L。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "3(a)",
+          "pages": [
+            6
+          ],
+          "proof": "μr=11、100 匝、中心气隙 1 cm，画三支路磁路并求 L。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "3(a–c)",
+          "pages": [
+            6,
+            7
+          ],
+          "proof": "环形铁芯 μr=1500、内半径 10 cm、截面直径 2 cm、10° 切口，求磁阻、磁通和 L。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "fa24",
+        "3(a–c)",
+        [
+          6,
+          7
+        ]
+      ],
+      "summary": "环形铁芯相对磁导率 1500，内半径 R=10 cm，圆形截面直径 D=2 cm，切口角 θ=10°，100 匝。忽略边缘效应。求铁芯与气隙磁阻、以未知电流 i 表示的总磁通和电感。原题提示弧长 l=rθ。",
+      "method": "先沿中心线取磁路长度，截面积垂直于磁通方向。图示气隙有几处就计几处；不能仅从题干出现一个 g 推断只有一个气隙。\n\n$$\\mathcal R_k=\\frac{l_k}{\\mu_k A_k},\\qquad Ni=\\mathcal R_{\\mathrm{eq}}\\phi,\\qquad \\lambda=N\\phi=Li.$$\n\n代表题为单回路：$r_{\\mathrm{mean}}=R+D/2$，$A=\\pi(D/2)^2$，$l_g=r_{\\mathrm{mean}}\\theta$，$l_c=r_{\\mathrm{mean}}(2\\pi-\\theta)$，角度以弧度代入。随后 $L=N^2/(\\mathcal R_c+\\mathcal R_g)$。分支磁路须先列磁通守恒与 MMF 方程；并联磁阻不能直接串加。",
+      "diagram": "magnetic",
+      "qa": [
+        [
+          "题目给内半径 R，磁路长度能直接用 2πR 吗？",
+          "不能；本题中心线半径为 R+D/2，并须分别扣出气隙与铁芯弧段。"
+        ],
+        [
+          "磁通 φ 与磁链 λ 有什么区别？",
+          "φ 为单匝穿链磁通，单位 Wb；均匀穿链时 λ=Nφ，单位 Wb·turn。"
+        ],
+        [
+          "无限磁导率铁芯还需要保留磁阻吗？",
+          "该理想铁芯段的磁阻取零，但有限磁导率插块和气隙仍须保留。"
+        ]
+      ],
+      "exam_count": 8,
+      "question_group_count": 8
+    },
+    {
+      "id": "D",
+      "title": "求自感 互感及耦合线圈的等效电感",
+      "definition": "明确要求求 L1、L2、M 或从串并联测量反推 L、M。题干仅给出这些参数的响应题不计入。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "4(a,b)",
+          "pages": [
+            8
+          ],
+          "proof": "先标 dot terminals，再求 L1、L2、M。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp21",
+          "problem": "4(a,c)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "由 Ra、Rb 求 M；两线圈串联后求总电感。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "4(b)",
+          "pages": [
+            8
+          ],
+          "proof": "两处气隙磁阻，求 L1、L2、M。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "4(a)",
+          "pages": [
+            9,
+            10
+          ],
+          "proof": "三处气隙磁阻，求 L1、L2、M。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "4(b)",
+          "pages": [
+            8,
+            9
+          ],
+          "proof": "三处气隙磁阻，求 L1、L2、M。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "4(b)",
+          "pages": [
+            10
+          ],
+          "proof": "从串联 8 mH、并联 5 mH 反推相同线圈的 L、M。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "4(a)",
+          "pages": [
+            8
+          ],
+          "proof": "10 与 20 匝、两处气隙 5 和 15 At/Wb，求 L1、L2、M。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        }
+      ],
+      "representative": [
+        "sp24",
+        "4(a)",
+        [
+          8
+        ]
+      ],
+      "summary": "两线圈分别 10 匝与 20 匝。铁芯磁阻可忽略；两处气隙磁阻为 R1=5、R2=15 At/Wb。求各线圈自感 L1、L2 与互感 M，题目明确 M 应取正。",
+      "method": "单独激励一个绕组，分别求本绕组穿链磁通和另一绕组穿链磁通。\n\n$$L_1=\\frac{N_1\\phi_{11}}{i_1},\\qquad L_2=\\frac{N_2\\phi_{22}}{i_2},\\qquad M=\\left|\\frac{N_2\\phi_{21}}{i_1}\\right|.$$\n\n代表题为共用同一磁通的单回路，可用 $L_1=N_1^2/\\mathcal R_{\\mathrm{eq}}$、$L_2=N_2^2/\\mathcal R_{\\mathrm{eq}}$、$M=N_1N_2/\\mathcal R_{\\mathrm{eq}}$，其中 $\\mathcal R_{\\mathrm{eq}}=R_1+R_2$。这组简式不能直接套到有漏磁支路的 fa21、sp21、sp22、sp23。fa23 的串并联测量须按实际点端列式；本卷文字规定串联为异名端相接、并联为同名端相接，但串联图画成了同为非点端的两端相接。若按文字，两个相同线圈应同时满足 $L_s=2(L+M)$、$L_p=(L+M)/2$，故 $L_s=4L_p$。题给 8 mH 与 5 mH 不满足这一关系。官方 solution 按图采用串联相消、并联相助，得到 L=7 mH、M=3 mH；其采用的串联连接与题干文字不同。本册保留并计一次，标明文字与图示冲突，练习时需先声明按图还是按文字。",
+      "diagram": "mutual",
+      "qa": [
+        [
+          "M 是正数，是否说明互感项总是正号？",
+          "不是。M 是互感幅值，方程中的正负号由点端、电流参考方向及电压极性决定。"
+        ],
+        [
+          "两绕组是否总满足 M=√(L1L2)？",
+          "只有完全耦合 k=1 才满足；有漏磁通常 k<1。"
+        ],
+        [
+          "如何分别测定或计算 L1 和 M？",
+          "令 i2=0，激励 i1；本线圈磁链除 i1 得 L1，另一线圈磁链除 i1 的幅值得 M。"
+        ]
+      ],
+      "exam_count": 7,
+      "question_group_count": 7
+    },
+    {
+      "id": "E",
+      "title": "电容补偿及补偿前后功率因数和电流",
+      "definition": "明确加入电容并要求补偿容量、目标 PF、补偿后电流或由电容引起的电流变化反推负载。同卷同 Problem 内多个目标 PF 只记一题组。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "2(d)",
+          "pages": [
+            5
+          ],
+          "proof": "补偿到 unity PF，求三相 kVAR 并解释 Y/Δ 接法。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "2(b)",
+          "pages": [
+            4
+          ],
+          "proof": "补偿到 unity PF，求每相容性 VAR 并说明理由。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "2(c)",
+          "pages": [
+            6
+          ],
+          "proof": "Δ 电容补偿到 unity PF，求新线电流相量。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "1(c)",
+          "pages": [
+            3
+          ],
+          "proof": "单相补偿到 0.975 lagging，求容性阻抗。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "2(b,c)",
+          "pages": [
+            4,
+            5
+          ],
+          "proof": "加入 30 kVAR Δ 电容，线电流反而增大，用前后数据求原负载功率。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "1(c)",
+          "pages": [
+            4
+          ],
+          "proof": "单相补偿到 unity PF，求电容电抗。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "2(c)",
+          "pages": [
+            6
+          ],
+          "proof": "三相补偿到 unity PF，求新线电流幅值。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "1(c,d)",
+          "pages": [
+            3
+          ],
+          "proof": "求补偿到 unity 与 0.8 leading 所需 VAR，并解释 leading。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "2(b)",
+          "pages": [
+            5
+          ],
+          "proof": "Δ 电容使线电流 7 A→4.75 A，求每相电容 F。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "sp23",
+        "1(c)",
+        [
+          2,
+          3
+        ]
+      ],
+      "summary": "2∠0° kV、60 Hz 电源给两个并联负载供电。总电流 100 A 且滞后，总有功 150 kW；负载 1 消耗 80 kVA、PF=0.95 滞后。加入并联电容使整体 PF=0.975 滞后，求容性负载阻抗。",
+      "method": "补偿改变 Q，理想并联电容不消耗平均有功。目标必须带 leading 或 lagging。\n\n$$Q_{\\mathrm{target}}=\\begin{cases}+P\\tan(\\cos^{-1}\\mathrm{PF}_{\\mathrm{target}}),&\\text{lagging}\\\\-P\\tan(\\cos^{-1}\\mathrm{PF}_{\\mathrm{target}}),&\\text{leading}\\end{cases},\\quad Q_C=Q_{\\mathrm{target}}-Q_{\\mathrm{old}}.$$\n\n$$Z_C=-j\\frac{V^2}{|Q_C|},\\qquad C_{\\mathrm{per\\ phase}}=\\frac{|Q_{C,3\\phi}|}{3\\omega V_{\\phi,C}^{\\,2}}.$$\n\n第二式的三相量与每相电压须对应；Δ 电容用 $V_{\\phi,C}=V_L$，Y 电容用 $V_L/\\sqrt3$。通常报告容量 $|Q_C|$ 为正，复功率里的电容 Q 为负。sp23 2(c) 专门提醒：加电容不保证线电流减小。",
+      "diagram": "compensation",
+      "qa": [
+        [
+          "补偿到 unity PF 的目标 Q 是多少？",
+          "为零，因此电容的带符号无功为 −Qold。"
+        ],
+        [
+          "同一 P 下 0.8 leading 与 0.8 lagging 是否同一补偿量？",
+          "不是。目标 Q 大小相同、符号相反，必须按目标 Q 减原 Q。"
+        ],
+        [
+          "画补偿电容应串联还是并联？",
+          "本组原题要求并联补偿；并联支路共用负载电压，新增电容电流与负载电流按相量相加。"
+        ]
+      ],
+      "exam_count": 7,
+      "question_group_count": 9
+    },
+    {
+      "id": "F",
+      "title": "耦合线圈开路电压与短路电流",
+      "definition": "用互感微分方程或相量模型求非理想耦合线圈响应。纯理想匝比小问归 G；本类含输入电流给定及输入电压给定两种激励。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "4(c)",
+          "pages": [
+            9
+          ],
+          "proof": "给 i1=√2·10 cos(377t)，求开路 v2(t)。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "4(c)",
+          "pages": [
+            9
+          ],
+          "proof": "用刚求出的 L1、L2、M，求 1∠0° kV 输入下的实际开路 V2。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "4(b)",
+          "pages": [
+            11
+          ],
+          "proof": "11∠45° kV 输入，求实际开路 V2 的幅值与相位。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "4(c)",
+          "pages": [
+            10
+          ],
+          "proof": "1∠45° kV 输入，求实际开路 V2。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "4(b)",
+          "pages": [
+            9
+          ],
+          "proof": "L1=10 H、L2=5 H、M=5 H，次级短路，求 i2(t)。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "4(b)",
+          "pages": [
+            9
+          ],
+          "proof": "L1=2 H、L2=250 H、M=5 H，次级开路，求 v2(t)。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "sp24",
+        "4(b)",
+        [
+          9
+        ]
+      ],
+      "summary": "L1=10 H、L2=5 H、M=5 H；次级短路，两个参考电流都流入各自点端，电压上正下负。初级施加 v1(t)=√2 cos(120πt) V，求与原图方向一致的次级短路电流 i2(t)。",
+      "method": "先同时标点端、电流与电压。两个电流均流入点端且电压采用被动极性时，互感项为正。\n\n$$v_1=L_1\\frac{di_1}{dt}+M\\frac{di_2}{dt},\\qquad v_2=M\\frac{di_1}{dt}+L_2\\frac{di_2}{dt}.$$\n\n开路为 $i_2=0$；若输入电压已知，则 $\\bar V_2=(M/L_1)\\bar V_1$，但极性不同可能多一个负号。短路为 $v_2=0$，正弦稳态下 $\\bar I_2=-(M/L_2)\\bar I_1$，且初级有效电感 $L_{\\mathrm{in}}=L_1-M^2/L_2$。返回时域时区分有效值与峰值；积分得到的直流常数不属于这里采用的正弦稳态响应。",
+      "diagram": "coupled",
+      "qa": [
+        [
+          "次级开路时，次级电压是否必为零？",
+          "不是。i2=0，但由初级变化磁通仍可产生互感电压。"
+        ],
+        [
+          "次级短路应设置 i2=0 还是 v2=0？",
+          "设置 v2=0；i2 通常不为零。"
+        ],
+        [
+          "若把 i2 的参考方向反过来，是否能只改最终电流符号？",
+          "必须同步改变方程中与 i2 有关的符号，并核对电压被动极性；代表同一物理解时数值结果可变号。"
+        ]
+      ],
+      "exam_count": 6,
+      "question_group_count": 6
+    },
+    {
+      "id": "G",
+      "title": "理想变压器匝比与阻抗折算",
+      "definition": "明确 ideal 假设下求电压、源端所见阻抗或负载功率。输入、输出间有两台变压器也仍是一题组。",
+      "evidence": [
+        {
+          "exam": "sp21",
+          "problem": "4(d)",
+          "pages": [
+            5
+          ],
+          "proof": "理想匝比 20:10，10 Ω 线路与 2 Ω 负载，求平均负载功率及改进办法。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "4(a)",
+          "pages": [
+            7
+          ],
+          "proof": "先假设理想，10:500 匝比，求开路输出电压与相位。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp23",
+          "problem": "4(a)",
+          "pages": [
+            8
+          ],
+          "proof": "先假设理想，400:10 匝比，求 1∠45° kV 的开路输出。",
+          "source_pdf": "sp23_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "4(a)",
+          "pages": [
+            9
+          ],
+          "proof": "两台理想变压器和线路阻抗，求源所见 apparent resistance。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "4(a.i–iii)",
+          "pages": [
+            8
+          ],
+          "proof": "240/120 V 理想变压器，1 kW、PF=0.8 滞后，求负载功率、阻抗、折算阻抗。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "fa24",
+        "4(a.i–iii)",
+        [
+          8
+        ]
+      ],
+      "summary": "理想单相变压器额定电压 240/120 V、60 Hz。初级对应 240 V，次级对应 120 V；负载消耗 1 kW，PF=0.8 滞后。求负载复功率、负载阻抗，以及从初级看到的负载阻抗。",
+      "method": "先定义 $a=N_1/N_2$，再确认阻抗折算到哪一侧。\n\n$$|V_2|=\\frac{|V_1|}{a},\\qquad Z_{L\\to1}=a^2Z_L,\\qquad Z_L=\\frac{|V_2|^2}{\\bar S_L^*}.$$\n\n电压符号及相位按点端与测量极性确定；功率复数在无损理想模型下守恒。fa23 的两台变压器应从负载开始逐级折算，在哪一侧串联的线路阻抗，就在哪一侧相加。不要把理想匝比关系直接用来替代 F 类的实际耦合参数。",
+      "diagram": "transformer",
+      "qa": [
+        [
+          "匝比为 2，阻抗折算倍率为多少？",
+          "由次级折至初级为 4；逆向则除以 4。"
+        ],
+        [
+          "为什么阻抗按匝比平方而非一次方变化？",
+          "电压乘 a，电流除 a，二者之比因此乘 a²。"
+        ],
+        [
+          "画折算图时线路电阻如何处理？",
+          "把负载折到该电阻所在侧后再相加；若继续跨下一台变压器，整个该侧等效阻抗一起折算。"
+        ]
+      ],
+      "exam_count": 5,
+      "question_group_count": 5
+    },
+    {
+      "id": "H",
+      "title": "馈线压降 源端功率与负载端功率",
+      "definition": "题干给馈线阻抗，明确要求源端电压、功率或源端 PF。sp21 4(d) 的变压器线路归 G，未重复纳入此类直接馈线题。",
+      "evidence": [
+        {
+          "exam": "fa19",
+          "problem": "1(c,d)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "Zfeeder=1+j2 Ω，求源电压与源端 PF，并与负载端 PF 区分。",
+          "source_pdf": "fa19_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa21",
+          "problem": "1(b–d)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "馈线 0.1+j0.2 Ω，求源电压、总源功率及源端 PF。",
+          "source_pdf": "fa21_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa24",
+          "problem": "1(a,b)",
+          "pages": [
+            2,
+            3
+          ],
+          "proof": "每根供电导线均为 0.1+j0.1 Ω，求源功率与源电压。",
+          "source_pdf": "ECE330-mt1-fall24_v2.pdf"
+        }
+      ],
+      "representative": [
+        "fa24",
+        "1(a,b)",
+        [
+          2,
+          3
+        ]
+      ],
+      "summary": "三并联负载：100 A、PF=0.8 滞后；8 kW、PF=0.7 滞后；阻抗 5+j2 Ω。负载端电压为 283 sin(377t) V。每根供电导线的阻抗均为 0.1+j0.1 Ω。求源端有功/无功功率及源电压、电流的时域表达式。",
+      "method": "本题有两根导线，因此回路阻抗为每根的两倍。其他卷若已经给总馈线阻抗，不再乘 2。\n\n$$\\bar V_s=\\bar V_L+Z_{\\mathrm{loop}}\\bar I,\\qquad \\bar S_s=\\bar S_L+|I|^2Z_{\\mathrm{loop}}.$$\n\n必须先求负载总电流，再求压降与线路功率；$|I|^2Z$ 中的电流平方为实数幅值平方。电压波形是 sine（正弦）时，换成 cosine（余弦）参考要减 90°；283 V 是峰值，不是有效值。",
+      "diagram": "feeder",
+      "qa": [
+        [
+          "每根导线给 Z 时，回路阻抗为何是 2Z？",
+          "电流经过去程与回程两根导线，两段阻抗在回路中串联。"
+        ],
+        [
+          "线路有电阻时，源端 P 是否等于负载端 P？",
+          "不等；源端 P 还须加 |I|²Rloop 的损耗。"
+        ],
+        [
+          "源端与负载端 PF 能否共用一个答案？",
+          "不能。分别用各端的总 P、Q 求 PF；线路本身也可能吸收有功与无功。"
+        ]
+      ],
+      "exam_count": 3,
+      "question_group_count": 3
+    },
+    {
+      "id": "I",
+      "title": "由磁通密度求电流与饱和上限",
+      "definition": "明确给指定支路的 B，要求电流，或给各腿 B 上限要求最大不饱和电流。",
+      "evidence": [
+        {
+          "exam": "sp22",
+          "problem": "3(c)",
+          "pages": [
+            8
+          ],
+          "proof": "指定左腿 B=0.5 T，求 i。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "3(b)",
+          "pages": [
+            8
+          ],
+          "proof": "三腿 B 均不能超过 0.1 T，求最大不饱和电流。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        },
+        {
+          "exam": "sp24",
+          "problem": "3(b)",
+          "pages": [
+            7
+          ],
+          "proof": "指定中心腿 B=0.5 T，求 i。",
+          "source_pdf": "ECE330_sp24-mt1-exam.pdf"
+        }
+      ],
+      "representative": [
+        "fa23",
+        "3(b)",
+        [
+          7,
+          8
+        ]
+      ],
+      "summary": "无限磁导率铁芯、12 匝线圈，图中左、中、右支路磁阻分别 6、2、6 At/Wb。三条腿的磁通密度均须不超过 0.1 T。依据图示各腿截面求不饱和最大驱动电流。",
+      "method": "对每条腿分别使用其磁通和截面积，不能把总磁通平均分给各腿。\n\n$$B_k=\\frac{\\phi_k}{A_k},\\qquad \\phi_k=\\alpha_k i\\quad\\Longrightarrow\\quad i_{\\max}=\\min_k\\frac{B_{\\max,k}A_k}{|\\alpha_k|}.$$\n\n$\\alpha_k$ 是由当前线性磁路求出的该腿磁通对电流的比例。代表题先求分流系数，再逐腿比较上限；最先达到限制的腿决定最终 i。指定中心腿 B 的 sp24 与指定左腿 B 的 sp22 必须对应到各自支路，不能套相同总磁通。",
+      "diagram": "branch",
+      "qa": [
+        [
+          "三条腿 B 上限相同，是否说明磁通相同？",
+          "不一定；φ=BA，各腿截面积可能不同，且磁路分流也不一定均匀。"
+        ],
+        [
+          "最大允许电流应取各腿限制的最大值还是最小值？",
+          "取最小值，保证每条腿都未超过其上限。"
+        ],
+        [
+          "画模型时应标哪一个 B？",
+          "标在题目指定的实际铁芯腿上，再把该腿磁通与截面积对应到方程。"
+        ]
+      ],
+      "exam_count": 3,
+      "question_group_count": 3
+    },
+    {
+      "id": "J",
+      "title": "边缘效应对磁阻 电感 互感和电流的影响",
+      "definition": "只统计明确要求考虑 fringing 或解释其后果的小问；题干仅说 neglect fringing 不计出现。",
+      "evidence": [
+        {
+          "exam": "sp21",
+          "problem": "4(b)",
+          "pages": [
+            4
+          ],
+          "proof": "两处间隙均考虑 fringing，解释 M 增加或减少。",
+          "source_pdf": "sp21_mt1_blank.pdf"
+        },
+        {
+          "exam": "sp22",
+          "problem": "3题干及(a–c)",
+          "pages": [
+            7,
+            8
+          ],
+          "proof": "明确 Account for air gap fringing，计算磁路、L 和指定 B 的 i。",
+          "source_pdf": "sp22_mt1_blank.pdf"
+        },
+        {
+          "exam": "fa23",
+          "problem": "3(c)",
+          "pages": [
+            8
+          ],
+          "proof": "原磁阻忽略 fringing，要求解释计入后不饱和最大电流如何变。",
+          "source_pdf": "ECE330_fa23-mt1-exam.pdf"
+        }
+      ],
+      "representative": [
+        "sp21",
+        "4(b)",
+        [
+          4
+        ]
+      ],
+      "summary": "沿用 Problem 4 的磁结构：无限磁导率超合金、μr=5 的冷却液、N1=20、N2=10，忽略边缘效应时 Ra=200、Rb=800 At/Wb。若计算时考虑边缘效应，互感 M 增加还是减少？必须同时考虑两个间隙并解释。",
+      "method": "Fringing（边缘效应）使气隙附近磁通扩散，有效通量面积增大。几何近似须与课堂或原题解法一致，不把特定面积修正式当作普适精确公式。\n\n$$\\mathcal R_g=\\frac{g}{\\mu_g A_{g,\\mathrm{eff}}},\\qquad A_{g,\\mathrm{eff}}>A_{\\mathrm{core}}.$$\n\n因而在这一集中磁路近似中，同一气隙长度与磁导率下气隙磁阻减小。单回路固定电流时磁通和 L 增大；固定目标磁通时所需电流减小。分支结构中的 M 或饱和电流要把所有受影响支路重算后判断，不能只念“面积增大”便跳到整题结论；代表题明确要求同时分析 Ra 和 Rb。",
+      "diagram": "fringing",
+      "qa": [
+        [
+          "忽略 fringing 与考虑 fringing 的差别应画在哪里？",
+          "画在气隙处：磁通向外扩散、有效截面积改变；铁芯几何截面积不是因此整体变大。"
+        ],
+        [
+          "气隙有效面积增大，集中磁阻如何变化？",
+          "其他量不变时减小，因为 Rg 与有效面积成反比。"
+        ],
+        [
+          "有两条磁通路径，能否直接用单回路 L=N²/R 判断全部结果？",
+          "不能。先辨认公共磁通与漏磁路径，分别更新受影响磁阻，再求穿链磁通及所问量。"
+        ]
+      ],
+      "exam_count": 3,
+      "question_group_count": 3
+    }
+  ]
+}
